@@ -1,9 +1,15 @@
-import React from 'react'
+import Header from "@/Components/Common/header";
+import React from "react";
 
 const Home = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <Header />
+      <main>
+        <h1>InovaTech</h1>
+      </main>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
