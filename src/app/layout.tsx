@@ -1,5 +1,6 @@
 import Header from "@/Components/Common/header";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "@/styles/global.scss"
 
 export const metadata = {
   title: "InovaTech",

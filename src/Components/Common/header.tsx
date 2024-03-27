@@ -6,7 +6,7 @@ import LogoInovaTech from "../Logo";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" style={{zIndex: 99, backgroundColor: "transparent"}}>
       <Container>
         <Navbar.Brand href="/">
           <LogoInovaTech/>

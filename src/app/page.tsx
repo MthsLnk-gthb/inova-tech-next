@@ -1,11 +1,12 @@
 import React from "react";
 import Servicos from "./servicos/page";
+import IntroducaoScreen from "./introducao/page";
 
 const Home = () => {
   return (
     <div>
       <main>
-        <h1>InovaTech</h1>
+        <IntroducaoScreen/>
         <Servicos/>
       </main>
     </div>

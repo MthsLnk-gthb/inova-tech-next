@@ -4,13 +4,15 @@ import React from "react";
 
 const Servicos = () => {
   return (
-    <article  style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+    <main
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
       <CardsServicos />
       <RedirectButton
         destinyRoute="/servicos/orcamento"
         buttonContent="Orçamento"
       />
-    </article>
+    </main>
   );
 };
 
