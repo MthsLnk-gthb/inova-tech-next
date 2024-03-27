@@ -1,3 +1,4 @@
+import Header from "@/Components/Common/header";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export const metadata = {
@@ -16,7 +17,10 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,5 +1,7 @@
 import { servicos } from "@/data/Servicos";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "react-bootstrap";
 
 const DetalhesServico = ({ params }) => {
 
@@ -23,7 +25,7 @@ const DetalhesServico = ({ params }) => {
         alt={`Ícone do serviço ${servico.titulo}`}
       />
       <h1>{servico.titulo}</h1>
-      <p>{servico.descricao}</p>
+      <p>{servico.maisInformacoes}</p>
     </div>
   );
 };

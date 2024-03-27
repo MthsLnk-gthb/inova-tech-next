@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 
 const CardsServicos = () => {
   return (
-    <article>
+    <article style={{ display: "flex", flexWrap: "wrap", gap: "15px"}}>
       {servicos.map((servico, index) => {
         return (
           <Card key={index} style={{ width: "15rem" }}>
@@ -21,7 +21,7 @@ const CardsServicos = () => {
             <Card.Body>
               <Card.Title>{servico.titulo}</Card.Title>
               <Card.Text>{servico.descricao}</Card.Text>
-              <Link href={`/servicos/${servico.titulo.trim().toLowerCase()}`}>
+              <Link href={`/servicos/${servico.titulo.toLowerCase()}`}>
                 <Button variant="primary">Saiba Mais</Button>
               </Link>
             </Card.Body>
