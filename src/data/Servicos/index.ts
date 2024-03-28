@@ -10,8 +10,26 @@ import imagemDesign from '@/public/images/design.jpg'
 import imagemConsultoria from '@/public/images/consultoria.jpg'
 import imagemTreinamento from '@/public/images/treinamento.jpg'
 import { BsAspectRatioFill, BsBinocularsFill, BsBookmarkFill, BsBorderAll, BsChatLeftDotsFill, BsCodeSlash, BsCollectionPlayFill, BsDatabaseFillDown, BsDatabaseFillGear, BsEnvelopeFill, BsFan, BsFastForwardBtnFill, BsGraphUpArrow, BsPhoneFill, BsWindows } from "react-icons/bs";
+import { ReactNode } from "react";
+import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
-export const servicos = [
+export interface Solucao {
+  iconeSolucao: IconType;
+  tituloSolucao: string;
+  descricaoSolucao: string;
+}
+
+export interface Servico {
+  icone: StaticImageData
+  imagemFundo: StaticImageData;
+  titulo: string;
+  descricao: string;
+  maisInformacoes: string;
+  solucoes: Solucao[];
+}
+
+export const servicos: Servico[] =[
   {
     icone: iconeCodigo,
     imagemFundo: imagemCodigo,

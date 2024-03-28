@@ -5,6 +5,7 @@ import Link from "next/link";
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import CardsSolucoes from "../Content/CardsSolucoes";
 
 const CardsServicos = () => {
   return (
@@ -20,7 +21,10 @@ const CardsServicos = () => {
                  <Button variant="primary">Saiba Mais</Button>
                 {" "}
               </Link>
+          <CardsSolucoes solucoesServico={servico.solucoes}/>
             </Card.ImgOverlay>
+
+
           </Card>
         );
       })}
