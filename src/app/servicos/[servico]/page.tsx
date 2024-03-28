@@ -1,16 +1,16 @@
 import { servicos } from "@/data/Servicos";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "react-bootstrap";
 
-const DetalhesServico = ({ params }) => {
+interface RouteParams {
+  servico: string;
+}
 
+const DetalhesServico = ({ params }: { params: RouteParams }) => {
   const decodedServico = decodeURIComponent(params.servico);
 
   const servico = servicos.find(
     (servico) => servico.titulo.toLowerCase() === decodedServico.toLowerCase()
   );
-
 
   if (!servico) {
     return <div> Serviço não encontrado </div>;

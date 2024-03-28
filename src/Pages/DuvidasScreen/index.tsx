@@ -3,7 +3,7 @@ import { ArrayDuvidas } from "./../../data/Duvidas/index";
 import AccordionDuvidas from "@/Components/Content/AccordionDuvidas";
 
 const DuvidasScreen = () => {
-  // Dividindo o array em duas partes
+  
   const metadeDoArray = Math.ceil(ArrayDuvidas.length / 2);
   const primeiraMetade = ArrayDuvidas.slice(0, metadeDoArray);
   const segundaMetade = ArrayDuvidas.slice(metadeDoArray);
