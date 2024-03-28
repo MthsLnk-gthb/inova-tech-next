@@ -11,20 +11,16 @@ const CardsServicos = () => {
     <article style={{ display: "flex", flexWrap: "wrap", gap: "15px"}}>
       {servicos.map((servico, index) => {
         return (
-          <Card key={index} style={{ width: "15rem" }}>
-            <Card.Img
-              style={{ width: "50px", height: "50px" }}
-              variant="top"
-              src={servico.icone.src}
-            />
-
-            <Card.Body>
+          <Card key={index}>
+            <Card.Img src={servico.imagemFundo.src} alt="Card image" style={{opacity: "30%"}} />
+            <Card.ImgOverlay>
               <Card.Title>{servico.titulo}</Card.Title>
               <Card.Text>{servico.descricao}</Card.Text>
               <Link href={`/servicos/${servico.titulo.toLowerCase()}`}>
-                <Button variant="primary">Saiba Mais</Button>
+                 <Button variant="primary">Saiba Mais</Button>
+                {" "}
               </Link>
-            </Card.Body>
+            </Card.ImgOverlay>
           </Card>
         );
       })}
