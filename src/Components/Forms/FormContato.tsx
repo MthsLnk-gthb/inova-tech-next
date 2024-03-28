@@ -3,6 +3,13 @@
 import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
+import dotenv from "dotenv";
+dotenv.config();
+
+
+const serviceID = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+const templateID = process.env.NEXT_PUBLIC_TEMPLATE_KEY;
+const options = process.env.NEXT_PUBLIC_OPTIONS_KEY;
 
 const FormContato = () => {
   const [nome, setNome] = useState("");
@@ -23,24 +30,24 @@ const FormContato = () => {
       email: email,
     };
 
-    emailjs
-      .send(
-        "service_fh0onoc",
-        "template_ezrtmrf",
-        templateParams,
-        "5oYB_gOww4fJV9J2-"
-      )
-      .then(
-        (response) => {
-          console.log("Email enviado", response.status, response.text);
-          setNome("");
-          setEmail("");
-          setMensagem("");
-        },
-        (err) => {
-          alert("Falha ao enviar o email", err);
-        }
-      );
+     emailjs
+       .send(
+         serviceID,
+         templateID,
+         templateParams,
+         options
+       )
+       .then(
+         (response) => {
+           console.log("Email enviado", response.status, response.text);
+           setNome("");
+           setEmail("");
+           setMensagem("");
+         },
+         () => {
+           alert("Falha ao enviar o email");
+         }
+       );
   };
 
   return (
