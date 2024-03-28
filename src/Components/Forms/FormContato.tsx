@@ -16,7 +16,7 @@ const FormContato = () => {
   const [email, setEmail] = useState("");
   const [mensagem, setMensagem] = useState("");
 
-  const handleSendEmail = (e) => {
+  const handleSendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!nome || !email || !mensagem) {
@@ -32,10 +32,10 @@ const FormContato = () => {
 
      emailjs
        .send(
-         serviceID,
-         templateID,
+         serviceID!,
+         templateID!,
          templateParams,
-         options
+         options!
        )
        .then(
          (response) => {
