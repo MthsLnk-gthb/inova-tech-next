@@ -1,8 +1,18 @@
-body{
-    background-image: linear-gradient(to bottom,#091A27, #001F3F );
-    background-attachment: fixed;
+body {
+  background-image: linear-gradient(to bottom, #091a27, #001f3f);
+  background-attachment: fixed;
 }
 
-main{
-    min-height: 100dvh;
+.dark {
+  background-color: #252525;
+  color: #fff;
+}
+
+.light {
+  background-color: #dbdbdb;
+  color: #000;
+}
+
+main {
+  min-height: 100dvh;
 }

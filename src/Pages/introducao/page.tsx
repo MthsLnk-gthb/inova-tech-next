@@ -1,6 +1,6 @@
 import Image from "next/image";
 import backgroundImage from "@/public/images/graphic.jpg";
-import styles from "@/styles/pages/introducao.module.scss";
+import styles from "@/styles/screens/introducao.module.scss";
 
 const IntroducaoScreen = () => {
   return (
@@ -16,11 +16,12 @@ const IntroducaoScreen = () => {
         <article className={styles.content}>
           <h1>Soluções digitais para Empresas</h1>
           <p>
-            Somos a InovaTech, mais que uma empresa de soluções, nós
-            construímos e desenvolvemos o melhor para o seu negócio digital,
-            além de oferecer conteúdos e tutoriais dinâmicos para o treinamento da sua equipe !
+            Somos a InovaTech, mais que uma empresa de soluções, nós construímos
+            e desenvolvemos o melhor para o seu negócio digital, além de
+            oferecer conteúdos e tutoriais dinâmicos para o treinamento da sua
+            equipe !
           </p>
-          <ul style={{display: "flex"}}>
+          <ul style={{ display: "flex", flexWrap: "wrap" }}>
             <label>Nossos serviços:</label>
             <li>Desenvolvimento de Software</li>
             <li>Marketing</li>

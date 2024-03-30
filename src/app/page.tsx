@@ -6,14 +6,12 @@ import FormContato from "@/Components/Forms/FormContato";
 
 const Home = () => {
   return (
-    <div>
-      <main>
-        <IntroducaoScreen />
-        <FormContato/>
-        <Servicos />
-        <DuvidasScreen/>
-      </main>
-    </div>
+    <main>
+      <IntroducaoScreen />
+      <Servicos />
+      <DuvidasScreen />
+      <FormContato />
+    </main>
   );
 };
 

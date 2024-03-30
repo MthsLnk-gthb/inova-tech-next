@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const LogoInovaTech = () => {
-  return (
-        <h2>InovaTech</h2>
-  )
-}
+  return <h2 style={{ color: "#daab01" }}>InovaTech</h2>;
+};
 
-export default LogoInovaTech
+export default LogoInovaTech;
