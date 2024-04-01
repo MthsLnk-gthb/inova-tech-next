@@ -1,18 +1,37 @@
 body {
   background-image: linear-gradient(to bottom, #091a27, #001f3f);
   background-attachment: fixed;
-}
-
-.dark {
-  background-color: #252525;
   color: #fff;
-}
-
-.light {
-  background-color: #dbdbdb;
-  color: #000;
+  
+  max-width: 100dvw;
+   font-family: 'Nunito Sans', sans-serif;
 }
 
 main {
   min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu.show {
+  background-color: transparent;
+}
+
+#basic-nav-dropdown{
+  &:active{
+    color: #fff;
+  }
+  &:focus{
+    color: #fff;
+  }
+}
+
+.dropdown-item {
+  &:hover {
+    background-color: transparent;
+
+    color: #f3f3f3;
+  }
 }

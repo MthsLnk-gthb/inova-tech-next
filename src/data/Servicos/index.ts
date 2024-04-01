@@ -34,7 +34,7 @@ export const servicos: Servico[] =[
     imagemFundo: imagemCodigo,
     titulo: "Desenvolvimento de Software",
     descricao:
-      "Transforme suas ideias em realidade com nossa equipe de desenvolvedores entusiasmados e profissionais.",
+      "Implementamos a sua idéia a partir de códigos limpos e seguindo as melhores práticas do mercado, nossa equipe trabalha com desenvolvimento Front-End, Back-End, Desktop e Mobile.",
     maisInformacoes:
       "Nossos serviços incluem desenvolvimento web, mobile e desktop, integração de sistemas, migração de dados, otimização de desempenho e muito mais. Estamos comprometidos em fornecer soluções personalizadas que atendam às suas necessidades específicas, garantindo alta qualidade e eficiência em todas as etapas do processo de desenvolvimento.",
     solucoes: [

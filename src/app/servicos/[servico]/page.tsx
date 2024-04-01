@@ -1,3 +1,6 @@
+"use client"
+
+import CardsSolucoes from "@/Components/Content/CardsSolucoes";
 import { servicos } from "@/data/Servicos";
 import Image from "next/image";
 
@@ -26,6 +29,7 @@ const DetalhesServico = ({ params }: { params: RouteParams }) => {
       />
       <h1>{servico.titulo}</h1>
       <p>{servico.maisInformacoes}</p>
+      <CardsSolucoes solucoesServico={servico.solucoes} />
     </div>
   );
 };

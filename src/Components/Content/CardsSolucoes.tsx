@@ -11,7 +11,12 @@ const CardsSolucoes = ({ solucoesServico }: CardsSolucoesProps) => {
       {solucoesServico.map((solucao, index) => {
         return (
           <Card key={index}>
-            <Card.Img variant="top" as={solucao.iconeSolucao} fontSize="2rem" />
+            <Card.Img
+              variant="top"
+              as={solucao.iconeSolucao}
+              fontSize="2rem"
+              color="#edce05"
+            />
 
             <Card.Body>
               <Card.Title>{solucao.tituloSolucao}</Card.Title>

@@ -1,0 +1,12 @@
+.navbar {
+  a {
+    color: #ffffffce;
+    transition: linear .2s;
+
+    &:hover {
+      color: #fff;
+      scale: 1.03;
+    }
+
+  }
+}

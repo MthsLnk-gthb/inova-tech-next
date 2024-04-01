@@ -1,0 +1,73 @@
+.overlay {
+  position: relative;
+  width: 95vw;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.content {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  height: 100%;
+  padding: 0 15%;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.image {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.leftrightfade {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    #00000094 70%,
+    rgba(0, 0, 0, 0)
+  );
+  mask-image: linear-gradient(to right, #00000049 70%, rgba(0, 0, 0, 0));
+  left: 20px;
+}
+
+.rightleftfade {
+  -webkit-mask-image: linear-gradient(to left, #00000094, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to left, #00000049 70%, rgba(0, 0, 0, 0));
+  right: 20px;
+}
+
+.button {
+  background-color: #85c8f700;
+  border-radius: 5px;
+  width: 120px;
+  height: 55px;
+ border: 3px solid #0095ff;
+ backdrop-filter: blur(2px);
+
+  &:hover {
+    background-color: #0095ff;
+    border-color: #0095ff;
+  }
+}

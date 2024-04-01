@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Button } from "react-bootstrap";
+import styles from '@/styles/components/redirectbutton.module.scss'
 
 interface RedirectButtonProps{
     destinyRoute: string
@@ -10,7 +11,7 @@ interface RedirectButtonProps{
 const RedirectButton = ({destinyRoute, buttonContent}: RedirectButtonProps) => {
   return (
     <Link href={destinyRoute}>
-      <Button>{buttonContent}</Button>
+      <Button className={styles.button}>{buttonContent}</Button>
     </Link>
   );
 };
