@@ -17,8 +17,8 @@ const Header = () => {
           <Nav className="me-auto">
             <Nav.Link href="/">Início</Nav.Link>
             <Nav.Link href="/quemsomos">Quem somos</Nav.Link>
-            <Nav.Link href="/quemsomos">Entrar em contato</Nav.Link>
-            <Nav.Link href="/quemsomos">Equipe</Nav.Link>
+            <Nav.Link href="/contato">Entrar em contato</Nav.Link>
+            <Nav.Link href="/equipe">Equipe</Nav.Link>
             <NavDropdown title="Serviços" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.2">
                 Desenvolvimento de Sites

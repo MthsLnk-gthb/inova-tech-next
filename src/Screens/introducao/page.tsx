@@ -21,13 +21,13 @@ const IntroducaoScreen = () => {
             oferecer conteúdos e tutoriais dinâmicos para o treinamento da sua
             equipe !
           </p>
-          <ul style={{ display: "flex", flexWrap: "wrap" }}>
-            <label>Nossos serviços:</label>
+            <label className={styles.label}>Nossos serviços:</label>
+          <ul style={{ display: "flex", flexWrap: "wrap" }} className={styles.list}>
             <li>Desenvolvimento de Software</li>
+            <li>Treinamento</li>
+            <li>Consultoria</li>
             <li>Marketing</li>
             <li>Design</li>
-            <li>Consultoria</li>
-            <li>Treinamento</li>
           </ul>
         </article>
       </div>
